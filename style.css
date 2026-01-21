@@ -57,4 +57,7 @@
   margin-top: 0.25rem;
   color: #1F618D;
 }
+@media (max-width: 576px){
+  .logo-bts{ width: 140px; }
+}
 
