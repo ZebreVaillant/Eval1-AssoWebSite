@@ -56,7 +56,7 @@ body{
 
 /* Rendre les liens de menu plus gros */
 .navbar-nav .nav-link{
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-weight: 600;
   letter-spacing: 0.05em;
 }
