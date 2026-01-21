@@ -98,13 +98,11 @@ body{
 
 @media (max-width: 576px){
 
-  /* Logo beaucoup plus petit sur mobile */
   .logo-bts{
-    width: 110px !important;
+    width: 90px !important;
     height: auto !important;
   }
 
-  /* Titre plus compact */
   .titre-site{
     font-size: 1.3rem !important;
   }
@@ -114,9 +112,7 @@ body{
     letter-spacing: 0.15em !important;
   }
 
-  /* Menu un peu plus compact sur mobile (sinon ça prend trop de place) */
   .navbar-nav .nav-link{
     font-size: 1.05rem !important;
-    letter-spacing: 0.04em !important;
   }
 }
