@@ -25,3 +25,9 @@
   margin-top: 0.3rem;
   color: #2980B9;  /* bleu secondaire */
 }
+/* MENU PRINCIPAL */
+.navbar-nav .nav-link{
+  font-size: 1.2rem;       /* taille du texte */
+  font-weight: 500;        /* plus lisible sans être lourd */
+  letter-spacing: 0.05em;  /* respiration */
+}
