@@ -1,75 +1,28 @@
-.navbar-toggler{
-	box-shadow: none !important
-}
-.text-justify {
-  text-align: justify;
-}
-.logo-bts{
-  width: 200px !important;
-  height: auto !important;
-  max-width: none !important;
-}
+/* =========================
+   BASE
+   ========================= */
 
-.titre-site{
-  font-size: 2.4rem;
-  font-weight: 600;
-  color: #1F618D;
-  line-height: 1.2;
-}
-
-.titre-ville{
-  display: block;
-  font-size: 1.6rem;
-  font-weight: 400;
-  letter-spacing: 0.15em;
-  margin-top: 0.3rem;
-  color: #2980B9;  /* bleu secondaire */
-}
-/* MENU PRINCIPAL */
-.navbar-nav .nav-link{
-  font-size: 1.2rem;       /* taille du texte */
-  font-weight: 500;        /* plus lisible sans être lourd */
-  letter-spacing: 0.05em;  /* respiration */
-}
-/* Logo responsive */
-.logo-bts{
-  width: clamp(110px, 18vw, 200px);  /* min, fluide, max */
-  height: auto;
-  max-width: 100%;
-}
-
-/* Titre responsive */
-.titre-site{
-  font-size: clamp(1.4rem, 3vw, 2.6rem);
-  font-weight: 600;
-  color: #1F618D;
-  font-family: Arial, sans-serif;
-  line-height: 1.15;
+html, body{
   margin: 0;
+  padding: 0;
 }
 
-/* Ligne 2 (Talence) responsive */
-.titre-ville{
-  display: block;
-  font-size: clamp(1.1rem, 2.2vw, 1.7rem);
-  font-weight: 400;
-  letter-spacing: 0.12em;
-  margin-top: 0.25rem;
-  color: #1F618D;
-}
-@media (max-width: 576px){
-  .logo-bts{ width: 90px; }
+body{
+  font-family: Arial, sans-serif;
 }
 
-  .titre-site{
-    font-size: 1.3rem;
-  }
+/* =========================
+   COULEURS (cohérence site)
+   ========================= */
 
-  .titre-ville{
-    font-size: 1.05rem;
-    letter-spacing: 0.15em;
-  }
+:root{
+  --bleu-principal: #1F618D;  /* navbar / identité */
+  --bleu-secondaire: #2980B9; /* boutons accordion */
 }
+
+/* =========================
+   HEADER : LOGO + TITRE
+   ========================= */
 
 /* Desktop / global */
 .logo-bts{
@@ -78,9 +31,92 @@
   max-width: 100%;
 }
 
-@media (max-width: 991px){
-  .navbar-toggler{
-    margin-left: auto !important;
-    margin-right: auto !important;
+/* Titre sur 2 lignes */
+.titre-site{
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--bleu-principal);
+  line-height: 1.15;
+  margin: 0;
+}
+
+/* Ligne 2 : Talence */
+.titre-ville{
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  margin-top: 0.25rem;
+  color: var(--bleu-principal);
+}
+
+/* =========================
+   NAVBAR / MENU
+   ========================= */
+
+/* Rendre les liens de menu plus gros */
+.navbar-nav .nav-link{
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* Optionnel : rendre le hover un peu plus visible */
+.navbar-nav .nav-link:hover{
+  text-decoration: underline;
+}
+
+/* =========================
+   CARDS / CONTENU
+   ========================= */
+
+.light-card{
+  border: none;
+}
+
+/* Améliore la lisibilité des paragraphes */
+.card-body p{
+  line-height: 1.5;
+}
+
+/* Boutons accordéons (tu les as aussi en inline, mais on met une base propre) */
+.btn-primary{
+  border: none;
+}
+
+/* =========================
+   BREADCRUMB
+   ========================= */
+
+.breadcrumb{
+  margin-bottom: 0.5rem;
+}
+
+/* =========================
+   RESPONSIVE : MOBILE
+   ========================= */
+
+@media (max-width: 576px){
+
+  /* Logo beaucoup plus petit sur mobile */
+  .logo-bts{
+    width: 110px !important;
+    height: auto !important;
+  }
+
+  /* Titre plus compact */
+  .titre-site{
+    font-size: 1.3rem !important;
+  }
+
+  .titre-ville{
+    font-size: 1.05rem !important;
+    letter-spacing: 0.15em !important;
+  }
+
+  /* Menu un peu plus compact sur mobile (sinon ça prend trop de place) */
+  .navbar-nav .nav-link{
+    font-size: 1.05rem !important;
+    letter-spacing: 0.04em !important;
   }
 }
