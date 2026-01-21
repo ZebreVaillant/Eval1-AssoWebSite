@@ -58,6 +58,18 @@
   color: #1F618D;
 }
 @media (max-width: 576px){
-  .logo-bts{ width: 140px; }
+  .logo-bts{
+    width: 110px;
+  }
+
+  .titre-site{
+    font-size: 1.3rem;
+  }
+
+  .titre-ville{
+    font-size: 1.05rem;
+    letter-spacing: 0.15em;
+  }
 }
+
 
