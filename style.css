@@ -139,3 +139,6 @@ body{
     height: 220px;
   }
 }
+.sticky-top .nav-link i{
+  font-size: 1.4rem;
+}
