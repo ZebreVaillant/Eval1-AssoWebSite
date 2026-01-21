@@ -9,3 +9,10 @@
   height: auto !important;
   max-width: none !important;
 }
+.titre-site{
+  font-size: 2.2rem;       /* taille principale */
+  font-weight: 600;
+  color: #1F618D;
+  font-family: Arial, sans-serif;
+  line-height: 1.2;
+}
