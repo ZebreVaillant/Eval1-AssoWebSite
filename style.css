@@ -58,9 +58,8 @@
   color: #1F618D;
 }
 @media (max-width: 576px){
-  .logo-bts{
-    width: 110px;
-  }
+  .logo-bts{ width: 90px; }
+}
 
   .titre-site{
     font-size: 1.3rem;
