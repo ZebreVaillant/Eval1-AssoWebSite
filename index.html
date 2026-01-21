@@ -12,16 +12,12 @@
   <meta name="robots" content="index,follow">
   <meta name="googlebot" content="index,follow">
 
-  <title>BTS Communication Lycée Victor Louis</title>
-  <title>Talence</title>
+  <title>BTS Communication Lycée Victor Louis • Talence</title>
 
   <link rel="icon" href="favicon.ico" />
 
   <!-- My own CSS -->
-  
-  
-<link href="style.css?v=rollback" rel="stylesheet">
-
+  <link href="style.css" rel="stylesheet" type="text/css" />
   <!-- Bootstrap CSS-->
   <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
   <!--Boostrap icons url link-->
@@ -33,43 +29,27 @@
 
 <header>
 
-  <!---PRE-HEADER TITLE (logo + titre alignés)--->
-<div class="container-fluid py-3">
-  <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 gap-md-4">
-    
+  <!-- PRE-HEADER (logo + titre sur 2 lignes) -->
+  <div class="container-fluid py-3">
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 gap-md-4">
+
       <img src="logo-btscom.png"
            alt="Logo BTS Communication – Lycée Victor Louis"
            class="logo-bts img-fluid">
 
+      <h1 class="titre-site mb-0 text-uppercase text-center">
+        BTS Communication du Lycée Victor-Louis<br>
+        <span class="titre-ville">Talence</span>
+      </h1>
 
-    <h1 class="titre-site mb-0 text-uppercase text-center">
-      BTS Communication du Lycée Victor-Louis<br>
-      <span class="titre-ville">Talence</span>
-    </h1>
-
+    </div>
   </div>
-</div>
 
-
-
-  
-
-  <!---STICKY BOX WITH CONTACTS ICONS--->
-<button class="navbar-toggler"
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#menu" 
-        aria-controls="menu" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation"
-        style="color: white; width: 7rem; text-align: end; vertical-align: middle;">
-  <span><i class="bi bi-list"></i></span>
-</button>
-
-
+  <!-- STICKY BOX WITH CONTACTS ICONS -->
+  <div class="sticky-top">
+    <button type="button" class="btn btn-sm btn-warning shadow" style="position:absolute; right:1px; top:100px;">
 
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-
         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll d-flex align-items-start flex-column">
 
           <li class="nav-item">
@@ -77,33 +57,33 @@
               <span><i class="bi bi-geo-alt"></i></span>
             </a>
           </li>
-          <li class="nav-item ">
+
+          <li class="nav-item">
             <a class="nav-link" href="tel:+33500000000">
               <span><i class="bi bi-telephone"></i></span>
             </a>
           </li>
-          <li class="nav-item ">
+
+          <li class="nav-item">
             <a class="nav-link" href="mailto:marineld@gmail.com">
               <span><i class="bi bi-envelope"></i></span>
             </a>
           </li>
-        </ul>
 
+        </ul>
       </nav>
 
-    </button><!--end button-->
-  </div> <!-- end sticky-->
+    </button>
+  </div>
 
-  <!--NAV-->
+  <!-- NAV -->
   <nav class="navbar navbar-light navbar-expand-lg shadow-sm p-3 mb-3 rounded mx-0" style="background-color: #1F618D;">
 
     <div class="container-fluid justify-content-center d-flex">
 
-      <!-- On retire le logo ici pour éviter le double logo et améliorer l’alignement -->
-      <!-- <a class="navbar-brand text-white" href="index.html" style="font-size: 1rem; font-style: italic; padding-top: 1rem; padding-bottom: 10px;">
-        <img src="Merignac HandBall logo.png" style="width: 80px;" alt="logo Handball Merignac"/>
-      </a> -->
+      <!-- (Logo supprimé de la navbar : il est dans le pré-header) -->
 
+      <!-- Bouton hamburger (version d'origine, inchangée) -->
       <button class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
@@ -116,62 +96,64 @@
       </button>
 
       <div class="collapse navbar-collapse collapse-vertical text-center" id="menu">
-
-        <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
 
           <li class="nav-item m-2 px-4">
-            <a class="nav-link active text-white text-uppercase" aria-current="page" href="index.html">Présentation de notre formation</a>
+            <a class="nav-link active text-white text-uppercase" aria-current="page" href="index.html">
+              Présentation de notre formation
+            </a>
           </li>
 
           <li class="nav-item m-2 px-4">
-            <a class="nav-link text-white text-uppercase" href="agenda.html">Nos portfolios</a>
+            <a class="nav-link text-white text-uppercase" href="agenda.html">
+              Nos portfolios
+            </a>
           </li>
 
         </ul>
+      </div>
 
-      </div><!--end collapse navbar -->
-
-    </div> <!--container-fluid-->
-
+    </div>
   </nav>
 
 </header>
 
-<!--FIL D'ARIANE-->
+<!-- FIL D'ARIANE -->
 <nav class="mx-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item">
-      <a href="index.html">
-        <span class="badge bg-secondary"><i>Présentation de notre formation</i></span>
-      </a>
+      <a href="index.html"><span class="badge bg-secondary"><i>Présentation de notre formation</i></span></a>
     </li>
   </ol>
 </nav>
 
-<!--MAIN-->
+<!-- MAIN -->
 <main>
 
-  <!--PHILOSOPHY CLUB + CAROUSEL + ENCARTS BIG BOX-->
-  <div class="card light-card mx-2 text-dark bg-light" style="max-width: 100%;"> <!-- box card-->
+  <div class="card light-card mx-2 text-dark bg-light" style="max-width: 100%;">
 
     <div class="row g-0">
 
-      <div class="col-md-8"> <!-- partie philo et encarts de présentation-->
+      <div class="col-md-8">
 
-        <div class="card-body"> <!-- carte texte-->
+        <div class="card-body">
 
-          <h5 class="card-title"><p class="text-center">Notre formation</p></h5>
-          <p class="card-text text-center text-justify"><em>
-            Une formation professionnalisante en communication (Bac+2). Le BTS Communication du lycée Victor Louis forme des étudiants capables de concevoir, produire et piloter des actions de communication, avec une forte approche par projets et stages.
-          </em></p>
+          <h5 class="card-title">
+            <p class="text-center">Notre formation</p>
+          </h5>
 
-          <!--BOX "HISTORIQUE"-->
+          <p class="card-text text-center text-justify">
+            <em>
+              Une formation professionnalisante en communication (Bac+2). Le BTS Communication du lycée Victor Louis forme des étudiants capables de concevoir, produire et piloter des actions de communication, avec une forte approche par projets et stages.
+            </em>
+          </p>
+
+          <!-- BOX "HISTORIQUE" -->
           <div class="container-fluid">
 
             <p>
             <div class="d-grid gap-2 shadow-sm">
-              <button
-                      class="btn btn-primary"
+              <button class="btn btn-primary"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#Historique"
@@ -187,8 +169,8 @@
             <div class="collapse" id="Historique">
               <div class="card card-body">
                 <p class="text-justify">
-                  <h3>C’EST LA REPRISE !</h3><i>Actualisé le 5/01</i>
-                  Les étudiants.....
+                <h3>C’EST LA REPRISE !</h3><i>Actualisé le 5/01</i>
+                Les étudiants.....
                 </p>
                 <button type="button" class="btn btn-warning">
                   <i class="bi bi-box-arrow-up-right"></i> Toutes les actualités
@@ -196,15 +178,14 @@
               </div>
             </div>
 
-          </div> <!--end container-fluid-->
+          </div>
 
-          <!--BOX INSCRIPTIONS-->
+          <!-- BOX INSCRIPTIONS -->
           <div class="container-fluid">
 
             <p>
             <div class="d-grid gap-2 shadow-sm">
-              <button
-                      class="btn btn-primary"
+              <button class="btn btn-primary"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#Inscription"
@@ -234,14 +215,14 @@
               </div>
             </div>
 
-          </div> <!--end container-fluid-->
+          </div>
 
-          <!-- BOx ORGANIGRAMME-->
+          <!-- BOX ORGANIGRAMME -->
           <div class="container-fluid">
+
             <p>
             <div class="d-grid gap-2 shadow-sm">
-              <button
-                      class="btn btn-primary"
+              <button class="btn btn-primary"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#Organigramme"
@@ -257,12 +238,13 @@
             <div class="collapse" id="Organigramme">
               <div class="card card-body">
                 <p class="text-justify">
+
                 <ul>
                   <h4>Les enseignants</h4>
                   <li><strong>Président</strong> : Michel BATAILLER</li>
                   <li>Vices-présidents : Gilles MEYER (en charge des salariés), Christophe RONDEAU (en charge des finances) &amp; Dominique MAGNENOT (en charge des animations)</li>
                   <li>Trésorier : Laurence DIRETTE</li>
-                  <li>Secrétaire: Valérie MATHE</li>
+                  <li>Secrétaire : Valérie MATHE</li>
                 </ul>
 
                 <ul>
@@ -274,24 +256,24 @@
                   <li>Commission organisation seniors : Gautier DEMAISON</li>
                   <li>Transport/Mini bus : Benjamin SROKA</li>
                 </ul>
+
                 </p>
               </div>
-            </div> <!-- end class collapse-->
+            </div>
 
-          </div> <!-- end container fluid-->
+          </div>
 
-          <!-- BOX CONTACT-->
+          <!-- BOX CONTACT -->
           <div class="container-fluid">
 
             <p>
             <div class="d-grid gap-2 shadow-sm">
-              <button
-                      class="btn btn-primary"
+              <button class="btn btn-primary"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#Téléphone"
+                      data-bs-target="#Telephone"
                       aria-expanded="false"
-                      aria-controls="Téléphone"
+                      aria-controls="Telephone"
                       style="background-color: #2980B9">
                 Nous contacter
                 <i class="bi bi-chevron-double-down"></i>
@@ -299,7 +281,7 @@
             </div>
             </p>
 
-            <div class="collapse" id="Téléphone">
+            <div class="collapse" id="Telephone">
               <div class="card card-body">
                 <p class="text-justify">
                 <ul>
@@ -309,14 +291,14 @@
                 </ul>
                 </p>
               </div>
-            </div> <!-- end class collapse-->
+            </div>
 
-          </div> <!-- end container fluid-->
+          </div>
 
         </div>
       </div>
 
-      <!---CAROUSEL-->
+      <!-- CAROUSEL -->
       <div class="col-md-4">
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 
@@ -334,7 +316,7 @@
               <img src="2.png" class="d-block w-100" alt="..." style="width:100%; height:auto;">
             </div>
 
-          </div> <!--end carousel inner-->
+          </div>
 
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -354,7 +336,7 @@
 
 </main>
 
-<!--FOOTER-->
+<!-- FOOTER -->
 <footer class="container-fluid bg-transparent">
   <div class="card-footer text-muted p-0 my-3">
     <div class="d-flex d-inline-flex--">
@@ -363,7 +345,7 @@
   </div>
 </footer>
 
-<!--script files-->
+<!-- script files -->
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
