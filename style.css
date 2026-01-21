@@ -13,8 +13,7 @@
 .titre-site{
   font-size: 2.4rem;
   font-weight: 600;
-  color: #1F618D;   /* bleu principal du site */
-  font-family: Arial, sans-serif;
+  color: #1F618D;
   line-height: 1.2;
 }
 
@@ -22,7 +21,7 @@
   display: block;
   font-size: 1.6rem;
   font-weight: 400;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
   margin-top: 0.3rem;
-  color: #1F618D;   /* même bleu pour cohérence */
+  color: #2980B9;  /* bleu secondaire */
 }
