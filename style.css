@@ -4,3 +4,8 @@
 .text-justify {
   text-align: justify;
 }
+.logo-bts{
+  width: 160px !important;
+  height: auto !important;
+  max-width: none !important;
+}
