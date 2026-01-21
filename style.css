@@ -134,3 +134,8 @@ body{
   object-fit: cover;   /* recadrage propre, sans déformation */
   display: block;
 }
+@media (max-width: 576px){
+  #carouselExampleInterval .carousel-item img{
+    height: 220px;
+  }
+}
