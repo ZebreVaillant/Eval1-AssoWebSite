@@ -126,3 +126,10 @@ body{
   }
 
 }
+/* Uniformiser le carousel */
+#carouselExampleInterval .carousel-item img{
+  width: 100%;
+  height: 360px;        /* ajuste : 300/360/420 selon ton goût */
+  object-fit: cover;    /* recadre sans déformer */
+  display: block;
+}
