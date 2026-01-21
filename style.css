@@ -31,3 +31,30 @@
   font-weight: 500;        /* plus lisible sans être lourd */
   letter-spacing: 0.05em;  /* respiration */
 }
+/* Logo responsive */
+.logo-bts{
+  width: clamp(110px, 18vw, 200px);  /* min, fluide, max */
+  height: auto;
+  max-width: 100%;
+}
+
+/* Titre responsive */
+.titre-site{
+  font-size: clamp(1.4rem, 3vw, 2.6rem);
+  font-weight: 600;
+  color: #1F618D;
+  font-family: Arial, sans-serif;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/* Ligne 2 (Talence) responsive */
+.titre-ville{
+  display: block;
+  font-size: clamp(1.1rem, 2.2vw, 1.7rem);
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  margin-top: 0.25rem;
+  color: #1F618D;
+}
+
