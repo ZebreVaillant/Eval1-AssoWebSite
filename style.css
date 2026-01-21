@@ -94,4 +94,11 @@
     letter-spacing: 0.15em !important;
   }
 }
+@media (max-width: 991px){
+  .navbar-toggler{
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
 
