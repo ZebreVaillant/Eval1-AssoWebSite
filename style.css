@@ -71,4 +71,27 @@
   }
 }
 
+/* Desktop / global */
+.logo-bts{
+  width: 200px;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Mobile : force plus petit */
+@media (max-width: 576px){
+  .logo-bts{
+    width: 110px !important;
+    height: auto !important;
+  }
+
+  .titre-site{
+    font-size: 1.3rem !important;
+  }
+
+  .titre-ville{
+    font-size: 1.05rem !important;
+    letter-spacing: 0.15em !important;
+  }
+}
 
