@@ -56,9 +56,9 @@ body{
 
 /* Rendre les liens de menu plus gros */
 .navbar-nav .nav-link{
-  font-size: 1.35rem;
+  font-size: 1.20rem;
   font-weight: 600;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
 }
 
 /* Optionnel : rendre le hover un peu plus visible */
