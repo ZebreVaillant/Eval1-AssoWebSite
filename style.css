@@ -175,37 +175,32 @@ body{
 /* =========================
    RESPONSIVE : MOBILE
    ========================= */
+/* =========================
+   RESPONSIVE : MOBILE
+   ========================= */
 @media (max-width: 576px){
 
-  /* Header : on empile logo + titre */
   .header-top{
-    grid-template-columns: 1fr;
-    row-gap: 10px;
-    justify-items: center;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    flex-direction: column;     /* empile logo + titre */
+    gap: 8px;
+    padding: 10px 5px;
   }
 
-  .header-left, .header-center{
-    justify-content: center;
-    padding-top: 0;
-  }
-
-  /* Logo plus petit */
   .logo-bts{
-    width: 70px !important;
-    height: auto !important;
+    width: 70px;
   }
 
-  /* Titre plus petit */
   .titre-site{
-    font-size: 1.3rem !important;
+    font-size: 1.3rem;
+    text-align: center;
   }
 
   .titre-ville{
-    font-size: 1.05rem !important;
-    letter-spacing: 0.15em !important;
+    font-size: 1.05rem;
+    letter-spacing: 0.15em;
+    text-align: center;
   }
+}
 
   /* Menu un peu plus compact */
   .navbar-nav .nav-link{
