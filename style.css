@@ -28,7 +28,7 @@ body{
 .header-top{
   display: flex;
   align-items: center;          /* alignement vertical parfait */
-  justify-content: center;      /* centre l’ensemble logo + titre */
+  justify-content: center;      /* centre l'ensemble logo + titre */
   gap: 30px;                    /* espace entre logo et titre */
   padding: 20px 10px;
 }
@@ -175,9 +175,6 @@ body{
 /* =========================
    RESPONSIVE : MOBILE
    ========================= */
-/* =========================
-   RESPONSIVE : MOBILE
-   ========================= */
 @media (max-width: 576px){
 
   .header-top{
@@ -200,7 +197,6 @@ body{
     letter-spacing: 0.15em;
     text-align: center;
   }
-}
 
   /* Menu un peu plus compact */
   .navbar-nav .nav-link{
