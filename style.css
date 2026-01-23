@@ -23,14 +23,22 @@ body{
    HEADER TOP (2 zones : logo / titre)
    ========================= */
 /* =========================
-   HEADER TOP : logo + titre alignés
+   HEADER TOP : logo + titre alignés - HEADER FIXE
    ========================= */
 header{
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 2000;
   background-color: white;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+/* Ajouter un espace en haut du body pour compenser le header fixe */
+body{
+  padding-top: 260px;
 }
 
 .header-top{
@@ -206,6 +214,11 @@ header{
    RESPONSIVE : MOBILE
    ========================= */
 @media (max-width: 576px){
+
+  /* Ajuster l'espace pour le header fixe sur mobile */
+  body{
+    padding-top: 180px;
+  }
 
   .header-top{
     flex-direction: column !important;     /* empile logo + titre - important pour forcer */
