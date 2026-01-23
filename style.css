@@ -25,6 +25,14 @@ body{
 /* =========================
    HEADER TOP : logo + titre alignés
    ========================= */
+header{
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
 .header-top{
   display: flex;
   align-items: center;          /* alignement vertical parfait */
@@ -86,16 +94,9 @@ body{
   text-decoration: underline;
 }
 
-/* Menu sticky - reste visible en scrollant */
+/* Le menu fait partie du header sticky maintenant */
 .navbar{
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  transition: box-shadow 0.3s ease;
-}
-
-.navbar.scrolled{
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin-bottom: 0 !important;
 }
 
 /* =========================
