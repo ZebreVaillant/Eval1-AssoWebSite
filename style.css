@@ -14,13 +14,42 @@ body{
    COULEURS (cohérence site)
    ========================= */
 :root{
-  --bleu-principal: #1F618D;  /* navbar / identité */
-  --bleu-secondaire: #2980B9; /* boutons accordion */
+  --bleu-principal: #1F618D;   /* identité */
+  --bleu-secondaire: #2980B9;  /* boutons accordéons */
+  --orange-contact: #f78c02;   /* barre contact */
 }
 
 /* =========================
-   HEADER : TITRE
+   HEADER TOP (2 zones : logo / titre)
    ========================= */
+.header-top{
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  align-items: start;
+  column-gap: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-left{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-center{
+  display: flex;
+  justify-content: center;
+  padding-top: 35px; /* remonte le titre vs logo */
+}
+
+/* Logo BTS */
+.logo-bts{
+  width: 200px;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Titre sur 2 lignes */
 .titre-site{
   font-size: 2.4rem;
   font-weight: 600;
@@ -29,6 +58,7 @@ body{
   margin: 0;
 }
 
+/* Ligne 2 : Talence */
 .titre-ville{
   display: block;
   font-size: 1.6rem;
@@ -36,28 +66,6 @@ body{
   letter-spacing: 0.15em;
   margin-top: 0.25rem;
   color: var(--bleu-principal);
-}
-
-/* =========================
-   LOGOS (BTS + Lycée)
-   ========================= */
-.logos-header{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: flex-start;
-}
-
-.logo-bts{
-  width: 200px;
-  height: auto;
-  max-width: 100%;
-}
-
-.logo-lycee{
-  width: 160px;
-  height: auto;
-  max-width: 100%;
 }
 
 /* =========================
@@ -106,14 +114,14 @@ body{
 }
 
 /* =========================
-   BARRE CONTACT FLOTTANTE
+   BARRE CONTACT FLOTTANTE (orange)
    ========================= */
 .contact-floating{
   position: fixed;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  background: #f78c02;
+  background: var(--orange-contact);
   border-radius: 12px;
   padding: 12px 10px;
   z-index: 9999;
@@ -141,10 +149,9 @@ body{
 }
 
 /* =========================
-   RESPONSIVE : TABLET/MOBILE
+   RESPONSIVE : TABLET (hamburger)
    ========================= */
-
-/* Centrer le hamburger sur mobile (override inline) */
+/* Centrer le hamburger sur mobile/tablette (override inline) */
 @media (max-width: 991px){
   .navbar .navbar-toggler{
     display: block !important;
@@ -160,24 +167,32 @@ body{
   }
 }
 
+/* =========================
+   RESPONSIVE : MOBILE
+   ========================= */
 @media (max-width: 576px){
 
-  /* logos plus petits */
+  /* Header : on empile logo + titre */
+  .header-top{
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    justify-items: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .header-left, .header-center{
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  /* Logo plus petit */
   .logo-bts{
     width: 70px !important;
     height: auto !important;
   }
 
-  .logo-lycee{
-    width: 110px !important;
-    height: auto !important;
-  }
-
-  .logos-header{
-    align-items: center;
-  }
-
-  /* titre plus petit */
+  /* Titre plus petit */
   .titre-site{
     font-size: 1.3rem !important;
   }
@@ -187,17 +202,17 @@ body{
     letter-spacing: 0.15em !important;
   }
 
-  /* menu plus compact */
+  /* Menu un peu plus compact */
   .navbar-nav .nav-link{
     font-size: 1.05rem !important;
   }
 
-  /* carousel plus petit */
+  /* Carousel plus petit */
   #carouselExampleInterval .carousel-item img{
     height: 220px;
   }
 
-  /* barre contact plus fine */
+  /* Barre contact plus fine */
   .contact-floating{
     width: 46px;
     right: 6px;
@@ -208,47 +223,4 @@ body{
   .contact-icon{
     font-size: 1.35rem;
   }
-}
-/* ===== Header en 3 zones : gauche / centre / droite ===== */
-..header-top{
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  align-items: start;
-  column-gap: 30px;
-}
-
-
-.header-left{
-  display: flex;
-  justify-content: flex-start;
-}
-
-.header-center{
-  display: flex;
-  justify-content: center;
-  padding-top: 35px; /* remonte le titre par rapport au gros logo */
-}
-
-.header-right{
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 65px; /* place le logo lycée plus bas (plus élégant) */
-}
-
-/* Mobile : on empile proprement */
-@media (max-width: 576px){
-  .header-top{
-    grid-template-columns: 1fr;
-    row-gap: 10px;
-    justify-items: center;
-  }
-
-  .header-left, .header-center, .header-right{
-    justify-content: center;
-    padding-top: 0;
-  }
-}
-/* OVERRIDE FINAL : couleur barre contact */
-.contact-floating{
-  background: #f78c02 !important;
 }
