@@ -186,3 +186,48 @@ body{
     gap: 12px;
   }
 }
+/* Barre flottante jaune */
+.contact-floating{
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffc107;      /* jaune */
+  border-radius: 12px;
+  padding: 12px 10px;
+  z-index: 9999;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  width: 52px;              /* largeur visible de la boîte */
+}
+
+.contact-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: #1f1f1f;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.contact-icon:hover{
+  opacity: 0.75;
+}
+
+@media (max-width: 576px){
+  .contact-floating{
+    width: 46px;
+    right: 6px;
+    padding: 10px 8px;
+    gap: 14px;
+  }
+
+  .contact-icon{
+    font-size: 1.35rem;
+  }
+}
