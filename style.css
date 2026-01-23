@@ -86,6 +86,18 @@ body{
   text-decoration: underline;
 }
 
+/* Menu sticky - reste visible en scrollant */
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar.scrolled{
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
 /* =========================
    BREADCRUMB
    ========================= */
@@ -237,4 +249,104 @@ body{
     font-size: 1.35rem;
     color: #ffffff !important;
   }
+
+  /* Footer responsive */
+  .footer-section{
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* =========================
+   FOOTER COMPLET
+   ========================= */
+.footer-principal{
+  background-color: var(--bleu-principal);
+  border-top: 3px solid var(--orange-contact);
+  padding: 3rem 0 1rem 0;
+  margin-top: 3rem;
+  color: white;
+}
+
+.footer-section h5{
+  color: var(--orange-contact);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.footer-section ul{
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li{
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a{
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover{
+  color: var(--orange-contact);
+  text-decoration: underline;
+}
+
+.footer-section p{
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.footer-section p a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-section p a:hover{
+  color: var(--orange-contact);
+  text-decoration: underline;
+}
+
+.social-icons a{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  color: var(--bleu-principal);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 0.5rem;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.social-icons a:hover{
+  background-color: var(--orange-contact);
+  color: white;
+}
+
+.footer-bottom{
+  background-color: #174a6f;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.footer-bottom p{
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-bottom a{
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover{
+  color: var(--orange-contact);
 }
