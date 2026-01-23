@@ -249,3 +249,7 @@ body{
     padding-top: 0;
   }
 }
+/* OVERRIDE FINAL : couleur barre contact */
+.contact-floating{
+  background: #f78c02 !important;
+}
