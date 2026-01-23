@@ -9,119 +9,102 @@
 	<meta name="googlebot" content="association, handball, mérignac">
 	<meta property="og:description" content="Association de HandBall de Nouvelle Aquitaine - Présentation de la structure et agenda des événements sportifs">
 
-
 	<title>Association Mérignac Handball</title>
 	<link rel="icon" href="favicon.ico" />
 	<link rel="icon" type="image/png" href="Merignac HandBall logo.png" />
 
-	<!-- My own CSS -->
-	<link href="style.css" rel="stylesheet" type="text/css" />
 	<!-- Bootstrap CSS-->
 	<link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+	<!-- My own CSS -->
+	<link href="style.css?v=fix2" rel="stylesheet" type="text/css" />
 	<!--Boostrap icons url link-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-
-	
 </head>
-
-	<header>
 
 <body>
 
-    <div class="container-fluid">
-    <p class="text-uppercase text-center mb-0"
-    style="font-size: 120%; font-family: 'Sports World', sans-serif; color: #1F618D; font-family: arial;">Association Virtuelle Mérignac Handball</p>
-  
+<header>
+
+  <!-- PRE-HEADER (logo + titre sur 2 lignes) -->
+  <div class="container-fluid py-3 header-top">
+
+    <div class="header-left">
+      <img src="Merignac HandBall logo.png" alt="Logo Mérignac Handball" class="logo-bts img-fluid">
+    </div>
+
+    <div class="header-center">
+      <h1 class="titre-site mb-0 text-uppercase text-center">
+        Association Virtuelle Mérignac Handball<br>
+        <span class="titre-ville">Nouvelle-Aquitaine</span>
+      </h1>
+    </div>
+
   </div>
 
+  <!-- BARRE CONTACT FLOTTANTE -->
+  <div class="contact-floating shadow">
+    <a class="contact-icon" href="https://goo.gl/maps/ivqYQyj61cESVeyD9" aria-label="Adresse">
+      <i class="bi bi-geo-alt"></i>
+    </a>
 
-	<!---CONTACT--->
+    <a class="contact-icon" href="tel:+33500000000" aria-label="Téléphone">
+      <i class="bi bi-telephone"></i>
+    </a>
 
-	<div class="sticky-top ">
-  		<button type="button" class="btn btn-sm btn-warning shadow" style="position:absolute; right:1px; top:100px;">
+    <a class="contact-icon" href="mailto:marineld@gmail.com" aria-label="Email">
+      <i class="bi bi-envelope"></i>
+    </a>
+  </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-          
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll d-flex align-items-start flex-column">
+  <!-- NAV -->
+  <nav class="navbar navbar-light navbar-expand-lg shadow-sm p-3 mb-3 rounded mx-0" style="background-color: #1F618D;">
 
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="https://goo.gl/maps/ivqYQyj61cESVeyD9"><span><i class="bi bi-geo-alt"></i></span></a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="tel:+33500000000"><span><i class="bi bi-telephone"></i></span></a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="mailto:marineld@gmail.com"><span><i class="bi bi-envelope"></i></span></a>
-              </li>
-            </ul>
-         
-      </nav>
-    </button><!--end button-->
-  </div> <!-- end sticky-->
+    <div class="container-fluid justify-content-center d-flex">
 
-
-  <!--NAV-->
-
-
-
-
- 
-
-    <nav class="navbar navbar-light navbar-expand-lg shadow-sm p-3 mb-3 rounded  mx-0" style="background-color: #1F618D;">  
-
-      <div class="container-fluid justify-content-center d-flex">
-
-        <a class="navbar-brand text-white" href="index.html" style="font-size: 1rem; font-style: italic; padding-top: 1rem; padding-bottom: 10px;"><img src="Merignac HandBall logo.png" style="width: 80px;" alt="logo Handball Merignac"/></a>
-
-        
-        
-          <button class="navbar-toggler"  
-              type="button" 
-              data-bs-toggle="collapse" 
-              data-bs-target="#menu" 
-              aria-controls="menu" 
-              aria-expanded="false" 
+      <!-- Bouton hamburger -->
+      <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#menu"
+              aria-controls="menu"
+              aria-expanded="false"
               aria-label="Toggle navigation"
-              style="color: white; width: 12rem; text-align: end; vertical-align: middle;">
-          <span><i class="bi bi-list"></i></span>
-          </button>
-      
-          <div class="collapse navbar-collapse collapse-vertical text-center" id="menu">
+              style="color: white; width: 7rem; text-align: end; vertical-align: middle;">
+        <span><i class="bi bi-list"></i></span>
+      </button>
 
+      <div class="collapse navbar-collapse collapse-vertical text-center" id="menu">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
 
-                   
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
-              
-              <li class="nav-item m-2 px-4">
-                <a class="nav-link active text-white text-uppercase" aria-current="page" href="index.html"></i>Présentation de l'association</a>
-              </li>
-            
-              <li class="nav-item m-2 px-4">
-                <a class="nav-link text-white text-uppercase" href="agenda.html"></i>Agenda sportif</a>
-              </li> 
-            
-            </ul>
-          
-          
-          </div><!--end collapse navbar -->
+          <li class="nav-item m-2 px-4">
+            <a class="nav-link text-white text-uppercase" href="index.html">
+              Présentation de l'association
+            </a>
+          </li>
 
-        
-      </div> <!--container-fluid justify-content-center d-inline-flex-->
-    
-    </nav>
+          <li class="nav-item m-2 px-4">
+            <a class="nav-link active text-white text-uppercase" aria-current="page" href="agenda.html">
+              Agenda sportif
+            </a>
+          </li>
 
+        </ul>
+      </div>
 
-<!--FIL D'ARIANE-->
+    </div>
+  </nav>
+
+</header>
+
+<!-- FIL D'ARIANE -->
 <nav class="mx-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="index.html"><span class="badge bg-secondary"><i>Présentation de l'association</i></span></a></li>
+    <li class="breadcrumb-item">
+      <a href="index.html"><span class="badge bg-secondary"><i>Présentation de l'association</i></span></a>
+    </li>
     <li class="breadcrumb-item active" aria-current="page"><i>Matchs et événements</i></li>
-    
   </ol>
 </nav>
-    
-   
-  </header>
 
 <main>
 
@@ -212,7 +195,7 @@
       <td>Séniors garcons</td>
       <td>Sallanches</td>
       <td>Gagné 35/19</td>
-      <td>Centre sportif Allanches</th></td>
+      <td>Centre sportif Allanches</td>
     </tr>
     <tr>
       <th scope="row">04/12/21</th>
@@ -246,27 +229,19 @@
 
 </div> <!--end container-fluid-->
 
-
-    
-
-    
 </main>
 
 <footer class="container-fluid bg-transparent">
   
     <div class="card-footer text-muted p-0 my-3">
       <div class="d-flex d-inline-flex--">
-        <p class="mt-1"><i>Dernière actualisation du site le 13/01/22</i><p>
-          
-      <div>
+        <p class="mt-1"><i>Dernière actualisation du site le 13/01/22</i></p>
+      </div>
     </div>
  
 </footer>
 
-
-    
-
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  </body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
 </html>
