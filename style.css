@@ -209,3 +209,43 @@ body{
     font-size: 1.35rem;
   }
 }
+/* ===== Header en 3 zones : gauche / centre / droite ===== */
+.header-top{
+  display: grid;
+  grid-template-columns: 240px 1fr 240px; /* colonnes logos fixes */
+  align-items: start;                    /* aligne en haut */
+  column-gap: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-left{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-center{
+  display: flex;
+  justify-content: center;
+  padding-top: 35px; /* remonte le titre par rapport au gros logo */
+}
+
+.header-right{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 65px; /* place le logo lycée plus bas (plus élégant) */
+}
+
+/* Mobile : on empile proprement */
+@media (max-width: 576px){
+  .header-top{
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    justify-items: center;
+  }
+
+  .header-left, .header-center, .header-right{
+    justify-content: center;
+    padding-top: 0;
+  }
+}
