@@ -259,3 +259,39 @@ body{
     margin: 0 auto !important;
   }
 }
+/* Bloc logos empilés */
+.logos-header{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;   /* aligné à gauche */
+  gap: 10px;
+}
+
+/* Logo BTS COM (déjà existant) */
+.logo-bts{
+  width: 200px;
+  height: auto;
+}
+
+/* Logo Lycée Victor Louis */
+.logo-lycee{
+  width: 160px;
+  height: auto;
+}
+
+/* Responsive mobile */
+@media (max-width: 576px){
+
+  .logos-header{
+    align-items: center;     /* centré sur mobile */
+  }
+
+  .logo-bts{
+    width: 90px;
+  }
+
+  .logo-lycee{
+    width: 110px;
+  }
+}
+
