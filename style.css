@@ -8,6 +8,7 @@ html, body{
 
 body{
   font-family: Arial, sans-serif;
+  padding-top: 260px; /* Espace pour le header fixe */
 }
 
 /* =========================
@@ -34,11 +35,6 @@ header{
   background-color: white;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   width: 100%;
-}
-
-/* Ajouter un espace en haut du body pour compenser le header fixe */
-body{
-  padding-top: 260px;
 }
 
 .header-top{
@@ -217,7 +213,7 @@ body{
 
   /* Ajuster l'espace pour le header fixe sur mobile */
   body{
-    padding-top: 180px;
+    padding-top: 200px !important;
   }
 
   .header-top{
