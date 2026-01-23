@@ -108,6 +108,18 @@ body{
   border: none;
 }
 
+/* Couleur personnalisée pour les boutons warning */
+.btn-warning{
+  background-color: #f88d12 !important;
+  border-color: #f88d12 !important;
+  color: #fff !important;
+}
+
+.btn-warning:hover{
+  background-color: #d97a0f !important;
+  border-color: #d97a0f !important;
+}
+
 /* =========================
    CAROUSEL (images même taille)
    ========================= */
