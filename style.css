@@ -178,7 +178,7 @@ body{
 @media (max-width: 576px){
 
   .header-top{
-    flex-direction: column;     /* empile logo + titre */
+    flex-direction: column !important;     /* empile logo + titre - important pour forcer */
     gap: 8px;
     padding: 10px 5px;
   }
@@ -189,7 +189,7 @@ body{
 
   .titre-site{
     font-size: 1.3rem;
-    text-align: center;
+    text-align: center !important;  /* force le centrage même avec la classe Bootstrap */
   }
 
   .titre-ville{
