@@ -294,3 +294,9 @@ body{
     width: 110px;
   }
 }
+/* Sur desktop : on aligne bien les deux logos en haut */
+@media (min-width: 768px){
+  .logos-header{
+    align-items: flex-start;
+  }
+}
