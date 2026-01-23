@@ -242,3 +242,20 @@ body{
     font-size: 1.35rem;
   }
 }
+
+/* Centrer le hamburger sur mobile (override inline) */
+@media (max-width: 991px){
+
+  .navbar .navbar-toggler{
+    display: block !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    width: auto !important;
+  }
+
+  .navbar .navbar-toggler span,
+  .navbar .navbar-toggler i{
+    display: inline-block !important;
+    margin: 0 auto !important;
+  }
+}
