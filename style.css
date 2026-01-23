@@ -22,27 +22,22 @@ body{
 /* =========================
    HEADER TOP (2 zones : logo / titre)
    ========================= */
+/* =========================
+   HEADER TOP : logo + titre alignés
+   ========================= */
 .header-top{
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  align-items: start;
-  column-gap: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  display: flex;
+  align-items: center;          /* alignement vertical parfait */
+  justify-content: center;      /* centre l’ensemble logo + titre */
+  gap: 30px;                    /* espace entre logo et titre */
+  padding: 20px 10px;
 }
 
+/* Zone logo */
 .header-left{
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-
-
-.header-center{
-  display: flex;
   justify-content: center;
-  padding-top: 35px; /* remonte le titre vs logo */
 }
 
 /* Logo BTS */
@@ -52,18 +47,25 @@ body{
   max-width: 100%;
 }
 
-/* Titre sur 2 lignes */
+/* Zone titre */
+.header-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Titre principal */
 .titre-site{
   font-size: 2.4rem;
   font-weight: 600;
   color: var(--bleu-principal);
   line-height: 1.15;
   margin: 0;
+  text-align: left;   /* important pour un rendu propre sur PC */
 }
 
 /* Ligne 2 : Talence */
 .titre-ville{
-  display: block;
   font-size: 1.6rem;
   font-weight: 400;
   letter-spacing: 0.15em;
