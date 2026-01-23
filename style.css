@@ -142,3 +142,47 @@ body{
 .sticky-top .nav-link i{
   font-size: 1.4rem;
 }
+/* Barre flottante fine à droite */
+.contact-floating{
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffc107;        /* jaune Bootstrap warning */
+  border-radius: 10px;
+  padding: 10px 8px;
+  z-index: 9999;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  width: 46px;                /* finesse de la barre */
+}
+
+/* Icônes */
+.contact-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: #1f1f1f;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+/* Petit effet au survol */
+.contact-icon:hover{
+  opacity: 0.75;
+}
+
+/* Mobile : on réduit ou on masque (au choix) */
+@media (max-width: 576px){
+  .contact-floating{
+    width: 40px;
+    right: 6px;
+    padding: 8px 6px;
+    gap: 12px;
+  }
+}
