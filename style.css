@@ -156,14 +156,18 @@ body{
   justify-content: center;
 
   text-decoration: none;
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: 1.3rem;
   line-height: 1;
 }
 
 .contact-icon:hover{
   opacity: 0.75;
-  color: #ffffff;
+  color: #ffffff !important;
+}
+
+.contact-icon i{
+  color: #ffffff !important;
 }
 
 /* =========================
@@ -231,5 +235,6 @@ body{
 
   .contact-icon{
     font-size: 1.35rem;
+    color: #ffffff !important;
   }
 }
