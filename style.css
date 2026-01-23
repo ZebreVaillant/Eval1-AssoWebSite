@@ -260,11 +260,11 @@ body{
    FOOTER COMPLET
    ========================= */
 .footer-principal{
-  background-color: var(--bleu-principal);
+  background-color: var(--bleu-principal) !important;
   border-top: 3px solid var(--orange-contact);
   padding: 3rem 0 1rem 0;
   margin-top: 3rem;
-  color: white;
+  color: white !important;
 }
 
 .footer-section h5{
