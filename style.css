@@ -110,14 +110,14 @@ body{
 
 /* Couleur personnalisée pour les boutons warning */
 .btn-warning{
-  background-color: #f88d12 !important;
-  border-color: #f88d12 !important;
+  background-color: #f78c0e !important;
+  border-color: #f78c0e !important;
   color: #fff !important;
 }
 
 .btn-warning:hover{
-  background-color: #d97a0f !important;
-  border-color: #d97a0f !important;
+  background-color: #d9780c !important;
+  border-color: #d9780c !important;
 }
 
 /* =========================
