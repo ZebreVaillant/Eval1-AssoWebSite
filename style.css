@@ -210,14 +210,13 @@ body{
   }
 }
 /* ===== Header en 3 zones : gauche / centre / droite ===== */
-.header-top{
+..header-top{
   display: grid;
-  grid-template-columns: 240px 1fr 240px; /* colonnes logos fixes */
-  align-items: start;                    /* aligne en haut */
+  grid-template-columns: 240px 1fr;
+  align-items: start;
   column-gap: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
+
 
 .header-left{
   display: flex;
