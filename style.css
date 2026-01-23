@@ -226,6 +226,17 @@ body{
     padding: 10px 8px;
     gap: 14px;
   }
+   /* Centrage parfait du hamburger sur mobile */
+@media (max-width: 991px){
+
+  .navbar .navbar-toggler{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+}
+
 
   .contact-icon{
     font-size: 1.35rem;
