@@ -350,7 +350,11 @@ header{
   color: white;
   text-decoration: none;
 }
-
+@media (max-width: 576px){
+  header{
+    background-color: #ffffff !important;
+  }
+}
 .footer-bottom a:hover{
   color: var(--orange-contact);
 }
