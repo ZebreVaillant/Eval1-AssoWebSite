@@ -8,8 +8,7 @@ html, body{
 
 body{
   font-family: Arial, sans-serif;
-  padding-top: 200px; /* Espace pour le header fixe */
-}
+  }
 
 /* =========================
    COULEURS (cohérence site)
@@ -27,11 +26,6 @@ body{
    HEADER TOP : logo + titre alignés - HEADER FIXE
    ========================= */
 header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2000;
   background-color: white;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   width: 100%;
@@ -41,8 +35,8 @@ header{
   display: flex;
   align-items: center;          /* alignement vertical parfait */
   justify-content: center;      /* centre l'ensemble logo + titre */
-  gap: 20px;                    /* espace entre logo et titre - réduit */
-  padding: 10px 10px;           /* padding réduit */
+  gap: 10px;                    /* espace entre logo et titre - réduit */
+  padding: 6px 10px;           /* padding réduit */
 }
 
 /* Zone logo */
@@ -214,9 +208,7 @@ header{
 @media (max-width: 576px){
 
   /* Ajuster l'espace pour le header fixe sur mobile */
-  body{
-    padding-top: 160px !important;
-  }
+  
 
   .header-top{
     flex-direction: column !important;     /* empile logo + titre - important pour forcer */
