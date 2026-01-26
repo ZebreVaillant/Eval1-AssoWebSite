@@ -8,7 +8,7 @@ html, body{
 
 body{
   font-family: Arial, sans-serif;
-  padding-top: 220px; /* Espace pour le header fixe + effet déchiré */
+  padding-top: 200px; /* Espace pour le header fixe */
 }
 
 /* =========================
@@ -24,7 +24,7 @@ body{
    HEADER TOP (2 zones : logo / titre)
    ========================= */
 /* =========================
-   HEADER TOP : logo + titre alignés - HEADER FIXE avec effet déchiré
+   HEADER TOP : logo + titre alignés - HEADER FIXE
    ========================= */
 header{
   position: fixed;
@@ -32,31 +32,9 @@ header{
   left: 0;
   right: 0;
   z-index: 2000;
-  background: linear-gradient(135deg, #f5e6d3 0%, #e8d4ba 100%); /* effet carton */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   width: 100%;
-}
-
-/* Effet déchiré en bas du header */
-header::after{
-  content: '';
-  position: absolute;
-  bottom: -20px;
-  left: 0;
-  right: 0;
-  height: 20px;
-  background: linear-gradient(135deg, #f5e6d3 0%, #e8d4ba 100%);
-  clip-path: polygon(
-    0% 0%, 2% 100%, 4% 0%, 6% 100%, 8% 0%, 10% 100%, 
-    12% 0%, 14% 100%, 16% 0%, 18% 100%, 20% 0%, 22% 100%,
-    24% 0%, 26% 100%, 28% 0%, 30% 100%, 32% 0%, 34% 100%,
-    36% 0%, 38% 100%, 40% 0%, 42% 100%, 44% 0%, 46% 100%,
-    48% 0%, 50% 100%, 52% 0%, 54% 100%, 56% 0%, 58% 100%,
-    60% 0%, 62% 100%, 64% 0%, 66% 100%, 68% 0%, 70% 100%,
-    72% 0%, 74% 100%, 76% 0%, 78% 100%, 80% 0%, 82% 100%,
-    84% 0%, 86% 100%, 88% 0%, 90% 100%, 92% 0%, 94% 100%,
-    96% 0%, 98% 100%, 100% 0%, 100% 0%
-  );
 }
 
 .header-top{
